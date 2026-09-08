@@ -1,0 +1,1 @@
+export function Footer(){return <footer className="mt-16 border-t bg-paper"><div className="container py-8 text-sm flex flex-col gap-3 md:flex-row md:justify-between"><span>© {new Date().getFullYear()} SR ENTERPRISES</span><span className="muted">Contact details available on request</span></div></footer>}

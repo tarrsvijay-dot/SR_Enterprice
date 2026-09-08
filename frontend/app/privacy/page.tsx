@@ -1,0 +1,1 @@
+export default function Privacy(){return <main className="container max-w-3xl py-12"><h1 className="text-3xl font-bold">Privacy</h1><p className="muted leading-7 mt-5">SR ENTERPRISES uses account and order details only to provide the requested service. This policy will be updated with the business’s final contact and retention information.</p></main>}

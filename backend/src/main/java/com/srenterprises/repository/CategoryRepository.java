@@ -1,0 +1,1 @@
+package com.srenterprises.repository; import com.srenterprises.entity.*; import org.springframework.data.jpa.repository.*; import java.util.*; public interface CategoryRepository extends JpaRepository<Category,UUID>{Optional<Category> findBySlug(String slug);}

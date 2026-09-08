@@ -1,0 +1,1 @@
+package com.srenterprises.repository; import com.srenterprises.entity.*; import org.springframework.data.domain.*; import org.springframework.data.jpa.repository.*; import java.util.*; public interface OrderRepository extends JpaRepository<CustomerOrder,UUID>{Page<CustomerOrder> findByCustomerEmailIgnoreCase(String email,Pageable pageable);}

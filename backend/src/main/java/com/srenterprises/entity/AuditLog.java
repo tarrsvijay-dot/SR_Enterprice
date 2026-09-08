@@ -1,0 +1,2 @@
+package com.srenterprises.entity; import jakarta.persistence.*; import java.time.*; import java.util.*;
+@Entity @Table(name="audit_logs") public class AuditLog { @Id public UUID id=UUID.randomUUID(); @ManyToOne @JoinColumn(name="actor_id") public User actor; public String action; @Column(name="entity_type") public String entityType; @Column(name="entity_id") public UUID entityId; @Column(columnDefinition="TEXT") public String description; @Column(name="created_at") public Instant createdAt=Instant.now(); }

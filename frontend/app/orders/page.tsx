@@ -1,0 +1,1 @@
+export default function Orders(){return <main className="container py-12"><h1 className="text-3xl font-bold">Orders</h1><div className="card p-6 mt-6"><p className="muted">Sign in to view your order history.</p></div></main>}

@@ -1,0 +1,3 @@
+package com.srenterprises.entity;
+import jakarta.persistence.*; import com.fasterxml.jackson.annotation.JsonIgnore; import java.time.*; import java.util.*;
+@Entity @Table(name="users") public class User { @Id public UUID id=UUID.randomUUID(); @Column(nullable=false,unique=true) public String email; @JsonIgnore @Column(name="password_hash",nullable=false) public String passwordHash; @Column(nullable=false) public String name; public String phone; @Enumerated(EnumType.STRING) @Column(nullable=false) public Role role=Role.CUSTOMER; public boolean active=true; @Column(name="created_at") public Instant createdAt=Instant.now(); @Column(name="updated_at") public Instant updatedAt=Instant.now(); @Column(name="last_login_at") public Instant lastLoginAt; }

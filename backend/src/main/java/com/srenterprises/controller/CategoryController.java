@@ -1,0 +1,2 @@
+package com.srenterprises.controller; import com.srenterprises.entity.*; import com.srenterprises.repository.*; import org.springframework.web.bind.annotation.*; import java.util.*;
+@RestController @RequestMapping("/api/categories") public class CategoryController { final CategoryRepository repo; CategoryController(CategoryRepository r){repo=r;} @GetMapping List<Category> list(){return repo.findAll().stream().filter(c->c.active).toList();} }

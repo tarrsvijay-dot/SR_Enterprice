@@ -1,0 +1,1 @@
+export const metadata={title:'About'}; export default function About(){return <main className="container max-w-3xl py-12"><h1 className="text-3xl font-bold">About SR ENTERPRISES</h1><p className="muted leading-7 mt-5">SR ENTERPRISES provides a focused, professional product catalogue for business customers. Contact us for product availability and service information.</p></main>}

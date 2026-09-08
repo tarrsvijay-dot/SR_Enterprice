@@ -1,0 +1,1 @@
+package com.srenterprises.repository; import com.srenterprises.entity.*; import org.springframework.data.jpa.repository.*; import org.springframework.data.domain.*; import java.util.*; public interface ProductRepository extends JpaRepository<Product,UUID>{Optional<Product> findBySlug(String slug); Page<Product> findByStatus(ProductStatus s, Pageable p);}

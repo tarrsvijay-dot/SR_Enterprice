@@ -1,0 +1,1 @@
+'use client'; import {useCart} from './CartProvider'; export function AddToCart({id,name,price,disabled}:{id:string;name:string;price:number;disabled?:boolean}){const {add}=useCart();return <button disabled={disabled} onClick={()=>add({id,name,price})} className="btn disabled:opacity-50">Add to Cart</button>}

@@ -1,0 +1,2 @@
+package com.srenterprises.dto; import jakarta.validation.*; import jakarta.validation.constraints.*; import java.util.*;
+public final class OrderDtos { private OrderDtos(){} public record Line(@NotNull UUID productId,@Min(1) int quantity){} public record Create(@NotEmpty List<@Valid Line> items,@NotBlank String recipientName,@Email String email,@NotBlank String phone,@NotBlank String addressLine,@NotBlank String city,@NotBlank String state,@NotBlank String postalCode){} public record Status(@NotNull com.srenterprises.entity.OrderStatus status){} }

@@ -1,0 +1,1 @@
+export default function Terms(){return <main className="container max-w-3xl py-12"><h1 className="text-3xl font-bold">Terms</h1><p className="muted leading-7 mt-5">Orders are subject to availability and confirmation by SR ENTERPRISES. Final business terms will be published here.</p></main>}
